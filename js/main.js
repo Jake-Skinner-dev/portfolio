@@ -379,13 +379,14 @@ function openCase(index) {
   openIndex = index;
   const p = projects[index];
   lbContent.innerHTML = caseHTML(p);
-  lightbox.querySelector(".lightbox-inner").scrollTop = 0;
   if (!reducedMotion) {
     shutter.classList.remove("flash");
     void shutter.offsetWidth; // restart the flash animation
     shutter.classList.add("flash");
   }
   if (!lightbox.open) lightbox.showModal();
+  // Always start at the top of the case study (must happen once the dialog is open)
+  lightbox.querySelector(".lightbox-inner").scrollTop = 0;
   // Shareable link straight to this project
   history.replaceState(null, "", `#work-${p.slug}`);
 }

@@ -573,13 +573,6 @@ img { max-width: 100%; display: block; }
   gap: clamp(32px, 6vw, 72px);
 }
 .about-text p { color: var(--muted); }
-.inline-link {
-  color: var(--text);
-  text-decoration: underline;
-  text-decoration-color: var(--red);
-  text-underline-offset: 3px;
-}
-.inline-link:hover { color: var(--red); }
 .about-lead {
   font-family: var(--f-display);
   font-weight: 600;
@@ -699,10 +692,16 @@ img { max-width: 100%; display: block; }
   flex: 1;
   min-height: 320px;
 }
+/* Size the cover from whichever runs out first, width or height,
+   so short wide frames don't push the shapes into the title */
 .frame .poster {
   position: absolute;
   inset: 0;
+  container-type: size;
+  --u: min(1cqi, 1.33cqb);
 }
+/* Lift the title above the viewfinder's bottom readout */
+.frame .poster-title { bottom: max(calc(6 * var(--u)), 40px); }
 
 /* Viewfinder overlay */
 .vf {
@@ -745,6 +744,15 @@ img { max-width: 100%; display: block; }
 }
 .vf-top { top: 14px; }
 .vf-bottom { bottom: 14px; }
+.vf-top > span,
+.vf-bottom > span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.vf-top > span:last-child,
+.vf-bottom > span:last-child { flex-shrink: 0; }
 .vf-rec::before {
   content: "";
   display: inline-block;
@@ -878,13 +886,14 @@ img { max-width: 100%; display: block; }
   right: calc(-12 * var(--u));
   background: var(--p-fg);
 }
+/* The ring stays in the top half so it never runs through the title */
 .motif-circle .poster-art::after {
-  width: calc(30 * var(--u));
+  width: calc(22 * var(--u));
   aspect-ratio: 1;
   border-radius: 50%;
-  top: calc(30 * var(--u));
-  right: calc(34 * var(--u));
-  border: calc(1.4 * var(--u)) solid var(--p-fg);
+  top: calc(6 * var(--u));
+  right: calc(40 * var(--u));
+  border: calc(1.2 * var(--u)) solid var(--p-fg);
 }
 .motif-stripes .poster-art::before {
   width: calc(56 * var(--u));
@@ -1606,7 +1615,6 @@ img { max-width: 100%; display: block; }
   height: clamp(260px, 42vw, 480px);
   border-radius: 0;
 }
-.lb-top .poster { --u: min(1cqi, 6px); }
 .lb-top .vf-top,
 .lb-top .vf-bottom,
 .lb-top .vf-thirds { opacity: 1; }
