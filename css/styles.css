@@ -1272,6 +1272,25 @@ img { max-width: 100%; display: block; }
   color: #6b5f4a;
 }
 .wp-card p:last-child { margin-bottom: 0; }
+.wp-kit {
+  margin: 12px 0 0;
+  padding-top: 10px;
+  border-top: 1px dashed rgba(43, 36, 24, 0.3);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #6b5f4a;
+}
+.wp-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-family: var(--f-display);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--map-red);
+}
+.wp-link:hover { text-decoration: underline; }
 .waypoint-next .wp-card {
   border: 2px dashed rgba(43, 36, 24, 0.4);
   background: rgba(255, 250, 240, 0.7);

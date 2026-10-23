@@ -410,6 +410,16 @@ if (lightbox) {
   // Open a project directly from a shared link like /#work-bloom-co
   const fromHash = location.hash.startsWith("#work-") ? location.hash.slice(6) : null;
   if (fromHash) openCase(projects.findIndex((p) => p.slug === fromHash));
+
+  // Any other link to a project (e.g. from the journey trail) opens its case study too
+  document.addEventListener("click", (e) => {
+    const link = e.target.closest('a[href^="#work-"]');
+    if (!link || link.closest(".gallery")) return;
+    const index = projects.findIndex((p) => `#work-${p.slug}` === link.getAttribute("href"));
+    if (index < 0) return;
+    e.preventDefault();
+    openCase(index);
+  });
 }
 
 // ============================================================

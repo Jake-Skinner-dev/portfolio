@@ -3,7 +3,7 @@
   YOUR STARTING XI — edit this list to change the Skills pitch.
   ============================================================
 
-  Eleven skills laid out in a 4-3-3. Each one becomes a player on the
+  Eleven skills laid out in a 4-4-2. Each one becomes a player on the
   pitch and gets a player card when clicked.
 
   Fields:
@@ -46,32 +46,32 @@ window.SQUAD = [
     note: "Palettes with purpose: accessible, on-brand and built to stand out."
   },
   {
-    number: 6, name: "Analytics", pos: "MID", x: 47, y: 78, rating: 85,
+    number: 6, name: "Analytics", pos: "MID", x: 48, y: 62, rating: 85,
     stats: { CRE: 72, STR: 92, CRA: 78, SPD: 86, COL: 84, RES: 94 },
     note: "Reading the data — Meta Ads, Google Analytics, A/B tests — and acting on it."
   },
   {
-    number: 10, name: "Art Direction", pos: "MID", x: 50, y: 50, rating: 91,
+    number: 10, name: "Art Direction", pos: "FWD", x: 74, y: 34, rating: 91,
     stats: { CRE: 95, STR: 88, CRA: 92, SPD: 82, COL: 92, RES: 88 },
-    note: "The playmaker: setting the creative vision and pulling the whole campaign together."
+    note: "The number 10 up front: setting the creative vision and pulling the whole campaign together."
   },
   {
-    number: 8, name: "Copywriting", pos: "MID", x: 47, y: 22, rating: 84,
+    number: 8, name: "Copywriting", pos: "MID", x: 48, y: 38, rating: 84,
     stats: { CRE: 88, STR: 84, CRA: 85, SPD: 86, COL: 82, RES: 84 },
     note: "Headlines, captions and calls to action that sound like the brand."
   },
   {
-    number: 7, name: "Social Media", pos: "FWD", x: 72, y: 82, rating: 90,
+    number: 7, name: "Social Media", pos: "MID", x: 50, y: 86, rating: 90,
     stats: { CRE: 92, STR: 86, CRA: 88, SPD: 94, COL: 86, RES: 92 },
-    note: "Scroll-stopping posts, reels and template systems that keep brands consistent at speed."
+    note: "Flying down the wing: scroll-stopping posts, reels and template systems that keep brands consistent at speed."
   },
   {
-    number: 9, name: "Brand Identity", pos: "FWD", x: 77, y: 50, rating: 93,
+    number: 9, name: "Brand Identity", pos: "FWD", x: 74, y: 66, rating: 93,
     stats: { CRE: 95, STR: 90, CRA: 96, SPD: 84, COL: 88, RES: 92 },
     note: "The striker: logos, visual systems and guidelines that people recognise instantly."
   },
   {
-    number: 11, name: "Campaigns", pos: "FWD", x: 72, y: 18, rating: 91,
+    number: 11, name: "Campaigns", pos: "MID", x: 50, y: 14, rating: 91,
     stats: { CRE: 93, STR: 92, CRA: 88, SPD: 88, COL: 90, RES: 94 },
     note: "Integrated concepts across OOH, digital and email — built to launch and convert."
   }
