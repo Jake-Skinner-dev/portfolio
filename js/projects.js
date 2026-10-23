@@ -84,6 +84,32 @@ window.PROJECTS = [
     gallery: []
   },
   {
+    title: "Mia Treleven",
+    code: "MIA",
+    client: "Mia Treleven — personal wellness brand",
+    category: "Branding",
+    year: "", // EDIT: add the year, e.g. "2025"
+    role: "Logo design, content planning, sponsorship portfolio",
+    summary: "Helped Mia Treleven launch her personal wellness brand on social media, from logo to content plan to a sponsorship-ready portfolio.",
+    challenge:
+      "Mia wanted to turn her passion for wellness into a personal brand on social media, but was starting from scratch: no logo, no plan for what to post, and nothing to show brands she wanted to work with.",
+    approach:
+      "I designed her logo to give the brand a recognisable identity from day one, worked with her on content planning so she had a clear direction for what to post and when, and put together a portfolio she can send to brands when approaching them for sponsorships.",
+    // EDIT: swap in real numbers when you have them, e.g. { value: "2k", label: "followers" }
+    results: [
+      { value: "Launched", label: "wellness brand on social media" },
+      { value: "New", label: "logo designed" },
+      { value: "Ready", label: "portfolio for sponsorship pitches" }
+    ],
+    deliverables: ["Logo design", "Content planning", "Sponsorship portfolio"],
+    link: "", // EDIT: add her Instagram or TikTok link here
+    image: "",
+    bg: "#cfe3d4",
+    fg: "#24463a",
+    motif: "arch",
+    gallery: []
+  },
+  {
     title: "Leicester & Charnwood",
     code: "LCS",
     client: "Leicester & Charnwood Sunday Football League",

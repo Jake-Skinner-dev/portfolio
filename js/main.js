@@ -353,7 +353,7 @@ function caseHTML(p) {
         <dl>
           <div><dt>Client</dt><dd>${escapeHTML(p.client)}</dd></div>
           <div><dt>Role</dt><dd>${escapeHTML(p.role)}</dd></div>
-          <div><dt>Year</dt><dd>${escapeHTML(p.year)}</dd></div>
+          ${p.year ? `<div><dt>Year</dt><dd>${escapeHTML(p.year)}</dd></div>` : ""}
           <div><dt>Category</dt><dd>${escapeHTML(p.category)}</dd></div>
           <div><dt>Delivered</dt><dd>${(p.deliverables || []).map(escapeHTML).join(", ")}</dd></div>
           <div><dt>Frame</dt><dd>${frameNo(p)} of ${String(projects.length).padStart(2, "0")}</dd></div>
