@@ -573,6 +573,13 @@ img { max-width: 100%; display: block; }
   gap: clamp(32px, 6vw, 72px);
 }
 .about-text p { color: var(--muted); }
+.inline-link {
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: var(--red);
+  text-underline-offset: 3px;
+}
+.inline-link:hover { color: var(--red); }
 .about-lead {
   font-family: var(--f-display);
   font-weight: 600;

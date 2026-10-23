@@ -32,6 +32,32 @@
 
 window.PROJECTS = [
   {
+    title: "Nova Social",
+    code: "NOV",
+    client: "Nova Social — my own marketing brand",
+    category: "Marketing",
+    year: "", // EDIT: add the year you started Nova Social, e.g. "2025"
+    role: "Founder",
+    summary: "My own marketing brand, helping businesses and creators build stronger online identities through marketing, branding and social media.",
+    challenge:
+      "I wanted a home for the marketing, branding and social media work I do for clients: a brand of its own that makes marketing feel simple for small businesses and creators, without the jargon.",
+    approach:
+      "I built Nova Social around three ideas — Smart, Simple, Social — and a four-step process: understand, plan, create, improve. It offers marketing, branding, social media management and websites for sports clubs, with a free social media review as an easy first step for new clients.",
+    // EDIT: swap in real numbers when you have them, e.g. { value: "8", label: "clients" }
+    results: [
+      { value: "Founded", label: "my own marketing brand" },
+      { value: "4", label: "services, from social media to sports club websites" },
+      { value: "Live", label: "at novasocial.co.uk" }
+    ],
+    deliverables: ["Brand & positioning", "Service offering", "Client marketing"],
+    link: "https://novasocial.co.uk/",
+    image: "",
+    bg: "#07080e",
+    fg: "#febe98",
+    motif: "circle",
+    gallery: []
+  },
+  {
     title: "Fusion 360 Group",
     code: "FUS",
     client: "Fusion 360 Group",
