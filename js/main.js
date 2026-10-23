@@ -535,7 +535,8 @@ if (tower && projects.length) {
   const rows = projects.filter((p) => p.results?.length);
   // Purple "fastest lap" for the biggest percentage result
   const pct = rows.map((p) => (p.results[0].value.includes("%") ? parseFloat(p.results[0].value.replace(/[^\d.]/g, "")) : -1));
-  const fastest = pct.indexOf(Math.max(...pct));
+  const topPct = Math.max(...pct);
+  const fastest = topPct > 0 ? pct.indexOf(topPct) : -1;
   // Team colour stripe: use the poster's text colour when its background is too dark to see
   const isDark = (hex = "") => {
     const n = parseInt(hex.replace("#", ""), 16);
