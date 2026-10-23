@@ -4,374 +4,396 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jake Skinner — Marketing & Graphic Designer</title>
-  <meta name="description" content="Jake Skinner is a marketing and graphic designer creating brand identities, campaigns and social content that get noticed." />
-  <meta name="theme-color" content="#f4f1ea" />
+  <meta name="description" content="Jake Skinner is a marketing and graphic designer creating brand identities, campaigns and social content — with a love of F1, football, photography and long walks." />
+  <meta name="theme-color" content="#0d0e10" />
 
   <!-- Social sharing preview -->
   <meta property="og:title" content="Jake Skinner — Marketing & Graphic Designer" />
-  <meta property="og:description" content="Brand identities, campaigns and social content that get noticed." />
+  <meta property="og:description" content="Brand identities, campaigns and social content — designed at full throttle." />
   <meta property="og:type" content="website" />
 
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;0,900;1,700;1,900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/css/styles.css" />
-
-  <!-- Apply saved theme before paint to avoid a flash -->
-  <script>
-    document.documentElement.classList.add("js");
-    try {
-      var t = localStorage.getItem("theme");
-      if (t) document.documentElement.setAttribute("data-theme", t);
-    } catch (e) {}
-  </script>
+  <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="progress" aria-hidden="true"></div>
-  <div class="cursor" aria-hidden="true"><span class="cursor-label">View</span></div>
-  <div class="grain" aria-hidden="true"></div>
 
-  <header class="site-header">
+  <!-- ============ TOP BAR ============ -->
+  <header class="topbar">
     <nav class="nav container" aria-label="Main">
-      <a href="#top" class="logo" aria-label="Jake Skinner, home">Jake Skinner<span>®</span></a>
+      <a href="#home" class="logo" aria-label="Jake Skinner, home">
+        <span class="logo-num">07</span>
+        <span class="logo-name">Jake Skinner</span>
+      </a>
 
       <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
         <span></span><span></span>
       </button>
 
       <ul class="nav-links" id="nav-links">
-        <li><a href="#work">Work</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact" class="nav-cta">Let's talk</a></li>
-        <li>
-          <button class="theme-toggle" aria-label="Toggle colour theme" title="Toggle theme">
-            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
-          </button>
-        </li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
       </ul>
+
+      <span class="lap mono" aria-hidden="true">LAP <b class="lap-now">1</b>/<span class="lap-total">7</span></span>
     </nav>
   </header>
 
   <main id="main">
-    <!-- ============ HERO ============ -->
-    <section class="hero" id="top">
-      <div class="container hero-inner">
+    <!-- ============ HERO: LIGHTS OUT ============ -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow reveal"><span class="status-dot"></span> Open to full-time &amp; freelance roles</p>
-
-          <h1 class="hero-title reveal">
-            <span class="sr-only">Marketing and graphic design that gets noticed.</span>
-            <span aria-hidden="true">
-              Marketing &amp; graphic design that
-              <span class="rotator">
-                <!-- EDIT: the rotating phrases -->
-                <span class="is-active">gets noticed.</span>
-                <span>tells stories.</span>
-                <span>drives results.</span>
-                <span>people remember.</span>
-              </span>
-            </span>
+          <p class="status"><span class="dot"></span> Available — full-time &amp; freelance</p>
+          <h1 class="hero-title">
+            <span class="line">Jake</span>
+            <span class="line">Skinner</span>
           </h1>
-
-          <p class="lead reveal">
-            <!-- EDIT: your one-line pitch -->
-            I'm Jake — a designer and marketer crafting brand identities, campaigns
-            and social content that look great <em>and</em> perform.
+          <p class="hero-role">Marketing &amp; Graphic Designer</p>
+          <!-- EDIT: your one-line pitch -->
+          <p class="hero-lead">
+            I design brands, campaigns and social content with race-day precision —
+            fast, focused and built to finish on the podium.
           </p>
-
-          <div class="hero-actions reveal">
-            <a href="#work" class="btn btn-primary magnetic">See my work <span aria-hidden="true">→</span></a>
+          <div class="actions">
+            <a href="#work" class="btn btn-red">View my work <span aria-hidden="true">→</span></a>
             <!-- EDIT: put your CV at assets/Jake-Skinner-CV.pdf -->
-            <a href="/assets/Jake-Skinner-CV.pdf" class="btn btn-ghost magnetic" download>Download CV <span aria-hidden="true">↓</span></a>
+            <a href="/assets/Jake-Skinner-CV.pdf" class="btn btn-line" download>Download CV</a>
           </div>
         </div>
 
-        <!-- Draggable stickers — purely decorative -->
-        <div class="stickers" aria-hidden="true">
-          <div class="sticker sticker-badge" style="--x: 62%; --y: 4%; --r: -8deg">
-            <svg viewBox="0 0 120 120">
-              <defs><path id="badge-circle" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0" /></defs>
-              <circle cx="60" cy="60" r="58" class="badge-bg" />
-              <text class="badge-text"><textPath href="#badge-circle">OPEN TO WORK ✦ OPEN TO WORK ✦ </textPath></text>
-              <text x="60" y="68" text-anchor="middle" class="badge-star">✺</text>
-            </svg>
+        <!-- Start lights + reaction game -->
+        <div class="start-panel">
+          <div class="gantry" aria-hidden="true">
+            <div class="pod"><span></span><span></span></div>
+            <div class="pod"><span></span><span></span></div>
+            <div class="pod"><span></span><span></span></div>
+            <div class="pod"><span></span><span></span></div>
+            <div class="pod"><span></span><span></span></div>
           </div>
-
-          <div class="sticker sticker-star" style="--x: 8%; --y: 52%; --r: 12deg">
-            <svg viewBox="0 0 100 100"><path d="M50 0 L61 34 L97 32 L68 54 L80 90 L50 68 L20 90 L32 54 L3 32 L39 34 Z" /></svg>
+          <div class="reaction">
+            <p class="reaction-status" aria-live="polite">Lights out and away we go.</p>
+            <p class="reaction-time mono"><span class="reaction-value">0.000</span><small>s</small></p>
+            <div class="reaction-row">
+              <button class="btn btn-red reaction-btn" type="button">Test your reactions</button>
+              <span class="reaction-best mono">Best: —</span>
+            </div>
+            <p class="reaction-hint">Hit start, then click (or press space) the moment the lights go out. F1 drivers typically react in about 0.2s.</p>
           </div>
-
-          <div class="sticker sticker-swatch" style="--x: 46%; --y: 40%; --r: 6deg">
-            <span class="swatch-chip"></span>
-            <span class="swatch-name">JS Orange</span>
-            <span class="swatch-hex">#FF4D2E</span>
-          </div>
-
-          <div class="sticker sticker-pill" style="--x: 4%; --y: 10%; --r: -10deg">Brand ✦ Strategy</div>
-
-          <div class="sticker sticker-pill sticker-pill-alt" style="--x: 30%; --y: 80%; --r: 4deg">Social that slaps</div>
-
-          <p class="sticker-hint">psst — drag these around ↗</p>
         </div>
       </div>
 
-      <!-- Scrolling marquee of services -->
-      <div class="marquee" aria-label="Services">
-        <div class="marquee-track">
-          <!-- EDIT: services list (it's repeated automatically for the loop) -->
-          <ul class="marquee-list">
-            <li>Brand Identity</li>
-            <li>Campaign Design</li>
-            <li>Social Media</li>
-            <li>Packaging</li>
-            <li>Content Strategy</li>
-            <li>Print &amp; Editorial</li>
-            <li>Art Direction</li>
-          </ul>
+      <!-- Telemetry: animated gauges -->
+      <div class="container telemetry" aria-label="Highlights">
+        <!-- EDIT: your real numbers. data-count = number, data-gauge = how full the dial is (0–1) -->
+        <div class="gauge" data-gauge="0.5">
+          <svg viewBox="0 0 120 120" aria-hidden="true"><circle class="gauge-track" cx="60" cy="60" r="50" /><circle class="gauge-fill" cx="60" cy="60" r="50" /></svg>
+          <span class="gauge-value mono" data-count="5" data-suffix="+">5+</span>
+          <span class="gauge-label">Years in design &amp; marketing</span>
+        </div>
+        <div class="gauge" data-gauge="0.75">
+          <svg viewBox="0 0 120 120" aria-hidden="true"><circle class="gauge-track" cx="60" cy="60" r="50" /><circle class="gauge-fill" cx="60" cy="60" r="50" /></svg>
+          <span class="gauge-value mono" data-count="60" data-suffix="+">60+</span>
+          <span class="gauge-label">Brands &amp; campaigns delivered</span>
+        </div>
+        <div class="gauge" data-gauge="0.85">
+          <svg viewBox="0 0 120 120" aria-hidden="true"><circle class="gauge-track" cx="60" cy="60" r="50" /><circle class="gauge-fill" cx="60" cy="60" r="50" /></svg>
+          <span class="gauge-value mono" data-count="12" data-suffix="M">12M</span>
+          <span class="gauge-label">Campaign impressions</span>
+        </div>
+        <div class="gauge" data-gauge="0.95">
+          <svg viewBox="0 0 120 120" aria-hidden="true"><circle class="gauge-track" cx="60" cy="60" r="50" /><circle class="gauge-fill" cx="60" cy="60" r="50" /></svg>
+          <span class="gauge-value mono" data-count="180" data-prefix="+" data-suffix="%">+180%</span>
+          <span class="gauge-label">Best engagement uplift</span>
         </div>
       </div>
     </section>
 
-    <!-- ============ STATS ============ -->
-    <section class="stats container" aria-label="Highlights">
-      <!-- EDIT: your real numbers. data-count is the number, data-prefix/suffix wrap it -->
-      <div class="stat reveal">
-        <span class="stat-num" data-count="5" data-suffix="+">5+</span>
-        <span class="stat-label">years in design &amp; marketing</span>
-      </div>
-      <div class="stat reveal">
-        <span class="stat-num" data-count="60" data-suffix="+">60+</span>
-        <span class="stat-label">brands &amp; campaigns delivered</span>
-      </div>
-      <div class="stat reveal">
-        <span class="stat-num" data-count="12" data-suffix="M">12M</span>
-        <span class="stat-label">impressions across campaigns</span>
-      </div>
-      <div class="stat reveal">
-        <span class="stat-num" data-count="180" data-prefix="+" data-suffix="%">+180%</span>
-        <span class="stat-label">best engagement uplift</span>
-      </div>
-    </section>
-
-    <!-- ============ WORK ============ -->
-    <section class="section container" id="work">
-      <div class="section-head reveal">
-        <h2>Selected <em>work</em></h2>
-        <p class="section-sub">Click any project to read the case study.</p>
-      </div>
-
-      <div class="filters reveal" role="group" aria-label="Filter projects"></div>
-
-      <!-- Cards are generated from js/projects.js -->
-      <div class="work-grid" id="work-grid"></div>
-    </section>
-
-    <!-- ============ ABOUT ============ -->
+    <!-- ============ ABOUT: OFF THE CLOCK ============ -->
     <section class="section container" id="about">
-      <div class="section-head reveal">
-        <h2>About <em>me</em></h2>
-      </div>
+      <header class="section-head">
+        <p class="sector mono">S1 · Paddock pass</p>
+        <h2>About me</h2>
+      </header>
 
       <div class="about-grid">
-        <div class="about-text reveal">
+        <div class="about-text">
           <!-- EDIT: your story -->
           <p class="about-lead">
-            I sit right where creativity meets commercial thinking. I design things
-            that look beautiful — and I make sure they move the numbers too.
+            I sit where creativity meets commercial thinking — I design things that look
+            great, and I make sure they move the numbers too.
           </p>
           <p>
-            I've worked across brand, campaign and social for start-ups, agencies
-            and in-house teams. I love a messy brief, a bold idea and a well-kerned
-            headline in equal measure.
+            I've worked across brand, campaign and social for start-ups, agencies and
+            in-house teams. I bring the same things to every brief: a clear strategy,
+            sharp craft and an obsession with the details.
           </p>
           <p>
-            When I'm not designing you'll find me collecting vintage packaging,
-            scrolling type foundries or sketching ideas in a notebook that's
-            mostly arrows.
+            Off the clock I'm into four things — and they've shaped how I work, so this
+            whole site is built around them.
           </p>
         </div>
 
-        <div class="about-side">
-          <div class="palette reveal">
-            <h3>My palette <span>— click to copy</span></h3>
-            <!-- EDIT: your signature colours -->
-            <div class="swatches">
-              <button class="swatch" style="--c: #FF4D2E" data-hex="#FF4D2E"><span>#FF4D2E</span></button>
-              <button class="swatch" style="--c: #141414" data-hex="#141414"><span>#141414</span></button>
-              <button class="swatch" style="--c: #F4F1EA" data-hex="#F4F1EA"><span>#F4F1EA</span></button>
-              <button class="swatch" style="--c: #D7F25C" data-hex="#D7F25C"><span>#D7F25C</span></button>
-              <button class="swatch" style="--c: #2B2BFF" data-hex="#2B2BFF"><span>#2B2BFF</span></button>
-            </div>
-          </div>
+        <!-- EDIT: personalise each hobby card -->
+        <ul class="hobbies">
+          <li class="hobby hobby-f1">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="17" /><circle cx="24" cy="24" r="4" /><path d="M7 24h13M28 24h13M24 28v13" /></svg>
+            <h3>Formula 1</h3>
+            <p>Sunday mornings are for race starts. F1 taught me that margins are won in the details.</p>
+            <span class="hobby-link mono">See: start lights ↑</span>
+          </li>
+          <li class="hobby hobby-football">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="17" /><path d="M24 15l7 5-3 8h-8l-3-8z" /><path d="M24 7v8M31 20l9-3M28 28l5 8M20 28l-5 8M17 20l-9-3" /></svg>
+            <h3>Football</h3>
+            <p>Matchday is non-negotiable. The best teams — and campaigns — win through great teamwork.</p>
+            <span class="hobby-link mono">See: starting XI ↓</span>
+          </li>
+          <li class="hobby hobby-photo">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="14" width="36" height="24" rx="3" /><circle cx="24" cy="26" r="7" /><path d="M17 14l3-5h8l3 5" /></svg>
+            <h3>Photography</h3>
+            <p>Always carrying a camera. It trains your eye for light, composition and the moment.</p>
+            <span class="hobby-link mono">See: the gallery ↓</span>
+          </li>
+          <li class="hobby hobby-walk">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 40l12-20 8 12 6-8 10 16z" /><circle cx="34" cy="12" r="4" /></svg>
+            <h3>Walking</h3>
+            <p>Long walks are where my best ideas turn up. Every project is a journey, one step at a time.</p>
+            <span class="hobby-link mono">See: the trail ↓</span>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-          <div class="toolkit reveal">
-            <h3>Toolkit</h3>
-            <!-- EDIT: your tools -->
-            <p class="toolkit-label">Design</p>
-            <ul class="tags">
-              <li>Illustrator</li><li>Photoshop</li><li>InDesign</li>
-              <li>Figma</li><li>After Effects</li><li>Canva</li>
-            </ul>
-            <p class="toolkit-label">Marketing</p>
-            <ul class="tags">
-              <li>Meta Ads</li><li>Google Analytics</li><li>HubSpot</li>
-              <li>Mailchimp</li><li>Hootsuite</li><li>SEO</li>
-            </ul>
-          </div>
+    <!-- ============ WORK: THROUGH THE LENS ============ -->
+    <section class="section container" id="work">
+      <header class="section-head">
+        <p class="sector mono">S2 · Through the lens</p>
+        <h2>Selected work</h2>
+        <p class="section-sub">Click any shot to open the full case study.</p>
+      </header>
+
+      <div class="modes" role="group" aria-label="Filter projects"></div>
+
+      <!-- Shots are generated from js/projects.js -->
+      <div class="gallery" id="gallery"></div>
+    </section>
+
+    <!-- ============ SKILLS: STARTING XI ============ -->
+    <section class="section container" id="skills">
+      <header class="section-head">
+        <p class="sector mono">S3 · Team sheet</p>
+        <h2>My starting XI</h2>
+        <p class="section-sub">Eleven skills, one formation. Tap a player to see their card.</p>
+      </header>
+
+      <div class="pitch-wrap">
+        <div class="pitch">
+          <!-- Pitch markings: one landscape, one portrait for phones -->
+          <svg class="pitch-lines pitch-h" viewBox="0 0 105 68" aria-hidden="true">
+            <rect x="0.5" y="0.5" width="104" height="67" />
+            <line x1="52.5" y1="0.5" x2="52.5" y2="67.5" />
+            <circle cx="52.5" cy="34" r="9.15" /><circle cx="52.5" cy="34" r="0.5" class="spot" />
+            <rect x="0.5" y="13.84" width="16" height="40.32" /><rect x="0.5" y="24.84" width="5" height="18.32" />
+            <rect x="88.5" y="13.84" width="16" height="40.32" /><rect x="99.5" y="24.84" width="5" height="18.32" />
+            <circle cx="11" cy="34" r="0.5" class="spot" /><circle cx="94" cy="34" r="0.5" class="spot" />
+          </svg>
+          <svg class="pitch-lines pitch-v" viewBox="0 0 68 105" aria-hidden="true">
+            <rect x="0.5" y="0.5" width="67" height="104" />
+            <line x1="0.5" y1="52.5" x2="67.5" y2="52.5" />
+            <circle cx="34" cy="52.5" r="9.15" /><circle cx="34" cy="52.5" r="0.5" class="spot" />
+            <rect x="13.84" y="0.5" width="40.32" height="16" /><rect x="24.84" y="0.5" width="18.32" height="5" />
+            <rect x="13.84" y="88.5" width="40.32" height="16" /><rect x="24.84" y="99.5" width="18.32" height="5" />
+            <circle cx="34" cy="11" r="0.5" class="spot" /><circle cx="34" cy="94" r="0.5" class="spot" />
+          </svg>
+          <span class="formation mono">4-3-3</span>
+          <!-- Players are generated from js/skills.js -->
+          <div class="players" id="players"></div>
+        </div>
+
+        <aside class="player-card" id="player-card" aria-live="polite"></aside>
+      </div>
+
+      <div class="bench">
+        <h3 class="mono">Substitutes' bench — the toolkit</h3>
+        <!-- EDIT: your tools -->
+        <ul class="chips">
+          <li>Illustrator</li><li>Photoshop</li><li>InDesign</li><li>Figma</li>
+          <li>After Effects</li><li>Canva</li><li>Lightroom</li><li>Meta Ads</li>
+          <li>Google Analytics</li><li>HubSpot</li><li>Mailchimp</li><li>SEO</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ JOURNEY: THE TRAIL ============ -->
+    <section class="trail-section" id="journey">
+      <div class="container">
+        <header class="section-head">
+          <p class="sector mono">S4 · The trail</p>
+          <h2>My journey so far</h2>
+          <p class="section-sub">Scroll to walk the route. <span class="steps-note">You've walked <b class="steps mono">0</b> steps on this page.</span></p>
+        </header>
+
+        <div class="trail" id="trail">
+          <svg class="trail-svg" aria-hidden="true">
+            <path class="trail-planned" />
+            <path class="trail-walked" />
+          </svg>
+
+          <!-- EDIT: your journey, oldest first. The last waypoint is the call to action. -->
+          <ol class="waypoints">
+            <li class="waypoint">
+              <span class="pin mono">1</span>
+              <div class="wp-card">
+                <p class="wp-meta mono">Trailhead · 2019 — 2022</p>
+                <h3>BA (Hons) Graphic Design</h3>
+                <p class="wp-org">University Name</p>
+                <p>First-class honours. Final project shortlisted for a national student design award.</p>
+              </div>
+            </li>
+            <li class="waypoint">
+              <span class="pin mono">2</span>
+              <div class="wp-card">
+                <p class="wp-meta mono">Waypoint · 2022 — 2024</p>
+                <h3>Graphic Designer</h3>
+                <p class="wp-org">Agency Name</p>
+                <p>Designed identities, packaging and campaigns for clients across retail, food &amp; drink and tech.</p>
+              </div>
+            </li>
+            <li class="waypoint">
+              <span class="pin mono">3</span>
+              <div class="wp-card">
+                <p class="wp-meta mono">Current position · 2024 — now</p>
+                <h3>Marketing &amp; Design Lead</h3>
+                <p class="wp-org">Company Name</p>
+                <p>Leading brand and campaign creative, managing paid social and growing the in-house content engine.</p>
+              </div>
+            </li>
+            <li class="waypoint waypoint-next">
+              <span class="pin pin-flag" aria-hidden="true">⚑</span>
+              <div class="wp-card">
+                <p class="wp-meta mono">Next peak · coming soon</p>
+                <h3>Your team?</h3>
+                <p>The route ahead is open. If you're looking for a designer who thinks like a marketer, let's plan it together.</p>
+                <a href="#contact" class="btn btn-dark">Plan the next leg →</a>
+              </div>
+            </li>
+          </ol>
         </div>
       </div>
     </section>
 
-    <!-- ============ SERVICES ============ -->
-    <section class="section container" id="services">
-      <div class="section-head reveal">
-        <h2>What I <em>do</em></h2>
-      </div>
+    <!-- ============ RESULTS: CLASSIFICATION ============ -->
+    <section class="section container" id="results">
+      <header class="section-head">
+        <p class="sector mono">S5 · Classification</p>
+        <h2>Results that crossed the line</h2>
+        <p class="section-sub">Headline numbers from each project. Click a row for the full story.</p>
+      </header>
 
-      <!-- EDIT: your services -->
-      <ol class="services">
-        <li class="service reveal">
-          <span class="service-num">01</span>
-          <h3>Brand Identity</h3>
-          <p>Logos, visual systems and guidelines that give brands a look people recognise instantly.</p>
-        </li>
-        <li class="service reveal">
-          <span class="service-num">02</span>
-          <h3>Campaigns</h3>
-          <p>Integrated concepts across OOH, digital and email — built to launch, convert and be remembered.</p>
-        </li>
-        <li class="service reveal">
-          <span class="service-num">03</span>
-          <h3>Social Content</h3>
-          <p>Scroll-stopping posts, reels and template systems that keep a brand consistent at speed.</p>
-        </li>
-        <li class="service reveal">
-          <span class="service-num">04</span>
-          <h3>Print &amp; Packaging</h3>
-          <p>Packaging, posters and editorial that feel as good in the hand as they look on the shelf.</p>
-        </li>
-      </ol>
+      <!-- Rows are generated from js/projects.js -->
+      <ol class="tower" id="tower"></ol>
 
-      <div class="process reveal">
-        <h3>How I work</h3>
-        <ol class="process-steps">
-          <li><span>Discover</span>Research, audience &amp; goals</li>
-          <li><span>Define</span>Strategy, message &amp; idea</li>
-          <li><span>Design</span>Concepts, iteration &amp; craft</li>
-          <li><span>Deliver</span>Launch, measure &amp; refine</li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- ============ TESTIMONIALS ============ -->
-    <section class="section container" id="kind-words" aria-labelledby="kind-words-title">
-      <div class="section-head reveal">
-        <h2 id="kind-words-title">Kind <em>words</em></h2>
-        <div class="carousel-controls">
-          <button class="icon-btn" data-dir="-1" aria-label="Previous testimonial">←</button>
-          <button class="icon-btn" data-dir="1" aria-label="Next testimonial">→</button>
-        </div>
-      </div>
-
+      <h3 class="subhead">Post-match ratings</h3>
       <!-- EDIT: replace with real quotes from managers, clients or tutors -->
-      <div class="carousel reveal" tabindex="0" aria-label="Testimonials">
-        <figure class="quote">
-          <blockquote>“Jake took a vague brief and turned it into a campaign our whole team got behind. Creative, fast and always thinking about the results.”</blockquote>
+      <div class="ratings">
+        <figure class="rating-card">
+          <span class="rating mono">9.4</span>
+          <p class="rating-award mono">Player of the match</p>
+          <blockquote>"Jake took a vague brief and turned it into a campaign our whole team got behind. Creative, fast and always thinking about results."</blockquote>
           <figcaption><strong>Client Name</strong> Marketing Director, Company</figcaption>
         </figure>
-        <figure class="quote">
-          <blockquote>“The rebrand completely changed how customers see us. We still get compliments on the packaging every week.”</blockquote>
+        <figure class="rating-card">
+          <span class="rating mono">9.1</span>
+          <p class="rating-award mono">Star of the show</p>
+          <blockquote>"The rebrand completely changed how customers see us. We still get compliments on the packaging every single week."</blockquote>
           <figcaption><strong>Client Name</strong> Founder, Company</figcaption>
         </figure>
-        <figure class="quote">
-          <blockquote>“A rare designer who understands strategy. Jake's social templates saved us hours every week and our engagement shot up.”</blockquote>
+        <figure class="rating-card">
+          <span class="rating mono">9.3</span>
+          <p class="rating-award mono">Assist of the season</p>
+          <blockquote>"A rare designer who understands strategy. Jake's social templates saved us hours every week and our engagement shot up."</blockquote>
           <figcaption><strong>Client Name</strong> Head of Social, Company</figcaption>
         </figure>
       </div>
     </section>
 
-    <!-- ============ EXPERIENCE ============ -->
-    <section class="section container" id="experience">
-      <div class="section-head reveal">
-        <h2><em>Experience</em></h2>
-      </div>
+    <!-- ============ CONTACT: TEAM RADIO ============ -->
+    <section class="section container" id="contact">
+      <header class="section-head">
+        <p class="sector mono">S6 · Final lap</p>
+        <h2>Let's talk</h2>
+      </header>
 
-      <!-- EDIT: your roles, newest first -->
-      <ol class="timeline">
-        <li class="reveal">
-          <span class="when">2024 — Now</span>
-          <div>
-            <h3>Marketing &amp; Design Lead <span class="at">@ Company Name</span></h3>
-            <p>Leading brand and campaign creative, managing paid social and growing the in-house content engine.</p>
+      <div class="contact-grid">
+        <div class="radio">
+          <div class="radio-head">
+            <span class="mono">Team radio</span>
+            <span class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
           </div>
-        </li>
-        <li class="reveal">
-          <span class="when">2022 — 2024</span>
-          <div>
-            <h3>Graphic Designer <span class="at">@ Agency Name</span></h3>
-            <p>Designed identities, packaging and campaigns for clients across retail, food &amp; drink and tech.</p>
+          <div class="radio-lines">
+            <p class="radio-line"><b>JAKE:</b> <span data-type="Radio check. Are you receiving me?">Radio check. Are you receiving me?</span></p>
+            <p class="radio-line"><b>JAKE:</b> <span data-type="I'm available for full-time and freelance roles. Box, box — let's talk about your next project.">I'm available for full-time and freelance roles. Box, box — let's talk about your next project.</span></p>
           </div>
-        </li>
-        <li class="reveal">
-          <span class="when">2019 — 2022</span>
-          <div>
-            <h3>BA (Hons) Graphic Design <span class="at">@ University Name</span></h3>
-            <p>First-class honours. Final project shortlisted for a national student design award.</p>
+          <!-- EDIT: replace you@example.com with your email (three places below) -->
+          <p class="radio-email mono">you@example.com</p>
+          <div class="actions">
+            <a class="btn btn-red" href="mailto:you@example.com">Send a message</a>
+            <button class="btn btn-line copy-email" type="button" data-copy="you@example.com">Copy email</button>
           </div>
-        </li>
-      </ol>
-    </section>
-
-    <!-- ============ CONTACT ============ -->
-    <section class="contact" id="contact">
-      <div class="container">
-        <p class="eyebrow reveal"><span class="status-dot"></span> Currently open to new roles</p>
-        <h2 class="contact-title reveal">Let's make something <em>people remember.</em></h2>
-
-        <div class="contact-actions reveal">
-          <!-- EDIT: replace with your real email address (both places) -->
-          <a class="contact-email" href="mailto:you@example.com">you@example.com</a>
-          <button class="btn btn-ghost copy-email magnetic" data-copy="you@example.com">Copy email</button>
         </div>
 
-        <ul class="socials reveal">
+        <div class="transfer">
+          <p class="transfer-label mono">Transfer status</p>
+          <p class="transfer-status"><span class="dot"></span> Available</p>
+          <p class="transfer-terms">Open to full-time roles and freelance projects. Immediate start.</p>
+          <a class="btn btn-line" href="/assets/Jake-Skinner-CV.pdf" download>Contract details (CV)</a>
           <!-- EDIT: your profile links -->
-          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
-          <li><a href="https://www.behance.net/" target="_blank" rel="noopener">Behance ↗</a></li>
-          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram ↗</a></li>
-          <li><a href="https://dribbble.com/" target="_blank" rel="noopener">Dribbble ↗</a></li>
-        </ul>
+          <ul class="socials">
+            <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+            <li><a href="https://www.behance.net/" target="_blank" rel="noopener">Behance ↗</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram ↗</a></li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer container">
-    <!-- EDIT: your city and time zone (see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) -->
-    <p>Based in the UK — <span class="clock" data-tz="Europe/London">--:--</span> local time</p>
-    <p>© <span id="year"></span> Jake Skinner</p>
-    <a href="#top">Back to top ↑</a>
+  <footer class="site-footer">
+    <div class="chequer" aria-hidden="true"></div>
+    <div class="container footer-inner">
+      <!-- EDIT: your city and time zone (see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) -->
+      <p class="mono">Based in the UK · Local time <span class="clock" data-tz="Europe/London">--:--</span></p>
+      <p>© <span id="year"></span> Jake Skinner</p>
+      <a href="#home" class="mono">Back to the grid ↑</a>
+    </div>
   </footer>
 
-  <!-- Case study modal -->
-  <dialog class="case" id="case" aria-labelledby="case-title">
-    <div class="case-inner">
-      <button class="case-close icon-btn" aria-label="Close case study">✕</button>
-      <div class="case-content"></div>
-      <div class="case-nav">
-        <button class="btn btn-ghost" data-step="-1">← Previous</button>
-        <button class="btn btn-ghost" data-step="1">Next →</button>
+  <!-- Case study lightbox -->
+  <dialog class="lightbox" id="lightbox" aria-labelledby="lb-title">
+    <div class="lightbox-inner">
+      <button class="close-btn" type="button" aria-label="Close case study">✕</button>
+      <div class="lightbox-content"></div>
+      <div class="lightbox-nav">
+        <button class="btn btn-line" type="button" data-step="-1">← Previous</button>
+        <button class="btn btn-line" type="button" data-step="1">Next →</button>
       </div>
     </div>
   </dialog>
+  <div class="shutter" aria-hidden="true"></div>
 
   <div class="toast" role="status" aria-live="polite"></div>
 
   <script src="/js/projects.js" defer></script>
+  <script src="/js/skills.js" defer></script>
   <script src="/js/main.js" defer></script>
 </body>
 </html>

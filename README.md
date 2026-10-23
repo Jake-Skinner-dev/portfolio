@@ -1,45 +1,43 @@
 # Jake Skinner — Marketing & Graphic Designer Portfolio
 
-A fast, dependency-free portfolio built with plain HTML, CSS and JavaScript.
-No build step — Vercel serves the files as-is.
+A fast, dependency-free portfolio built with plain HTML, CSS and JavaScript, themed around
+four hobbies: **F1, football, photography and walking**. No build step — Vercel serves the files as-is.
 
 ## Features
 
-- **Kinetic hero** — rotating headline phrases and draggable "stickers" (badge, star, colour swatch, pills)
-- **Services marquee** — an endlessly scrolling band of what you do
-- **Animated stats** — numbers count up when they scroll into view
-- **Filterable work gallery** — filter by category with smooth animated re-layout
-- **Case study pop-ups** — challenge, approach, results and gallery for each project, with
-  shareable links (e.g. `yoursite.com/#case-bloom-co`) and ←/→ keyboard navigation
-- **Generated poster artwork** — every project gets a designed cover until you add real images
-- **Click-to-copy colour palette** and **copy email** button with a toast confirmation
-- **Testimonials carousel**, services list with hover fills, and a process section
-- **Custom cursor** that turns into a "View" bubble over projects, and **magnetic buttons** (desktop)
-- **Light/dark mode**, scroll progress bar, live local-time clock, film-grain texture
-- Accessible: keyboard friendly, reduced-motion support, mobile layout
+| Section | Hobby | What it does |
+| --- | --- | --- |
+| Hero | F1 | Start lights launch the page; a **reaction-time game** saves your best time; telemetry gauges count up |
+| About | All four | Hobby cards explaining the theme |
+| Work | Photography | Gallery seen **through a camera viewfinder** (autofocus, rule of thirds); filter by category; case studies open with a **shutter flash** and a "shot info" panel; shareable links like `/#work-bloom-co` |
+| Skills | Football | Your **starting XI** on a pitch (turns portrait on phones); tap a player for their **player card**; toolkit as the subs' bench |
+| Journey | Walking | A **trail map** that draws itself as you scroll, waypoints for each role, and a step counter |
+| Results | F1 + football | **Timing tower** of headline results (with a purple fastest lap) and post-match ratings for testimonials |
+| Contact | F1 + football | **Team radio** message that types itself out, copy-email button, and a "transfer status" card |
+
+Also: lap counter in the nav, progress bar, chequered-flag footer, reduced-motion support and a mobile layout.
 
 ## Structure
 
 ```
 index.html        Page text (search for <!-- EDIT --> comments)
-js/projects.js    Your projects — the Work gallery and case studies are built from this
+js/projects.js    Your projects — gallery, case studies and timing tower
+js/skills.js      Your starting XI — the pitch and player cards
 js/main.js        All the interactive features
-css/styles.css    Styling; colours live at the top under "Theme tokens"
+css/styles.css    Styling; colours live at the top under "Tokens"
 assets/           Favicon, your CV and project images
-404.html          Not-found page
+404.html          "Off track" page
 vercel.json       Vercel settings (clean URLs, security headers)
 ```
 
 ## Making it yours
 
-1. **Text** — open `index.html` and search for `EDIT`. Each comment marks something to personalise:
-   headline phrases, intro, stats, about, palette, toolkit, services, testimonials, experience,
-   email, social links and your city/time zone.
-2. **Projects** — open `js/projects.js`. The instructions at the top explain each field.
-   To use real artwork, put images in `assets/work/` and set `image: "/assets/work/your-file.jpg"`;
-   extra case study images go in `gallery`.
-3. **CV** — save your CV as `assets/Jake-Skinner-CV.pdf` (or change the link in `index.html`).
-4. **Colours** — change `--accent` in `css/styles.css` (there's one for light mode and one for dark).
+1. **Text** — open `index.html` and search for `EDIT`: pitch, numbers, about, hobby cards, toolkit,
+   journey, testimonials, email, social links and your city/time zone.
+2. **Projects** — open `js/projects.js`; the instructions at the top explain each field. To use real
+   artwork, put images in `assets/work/` and set `image: "/assets/work/your-file.jpg"`.
+3. **Skills** — open `js/skills.js` to rename players, move them around the pitch or change ratings.
+4. **CV** — save your CV as `assets/Jake-Skinner-CV.pdf`.
 
 ## Running locally
 
@@ -51,8 +49,4 @@ Then open http://localhost:8000.
 
 ## Deploying
 
-1. Push this folder to a GitHub repository.
-2. On [vercel.com](https://vercel.com), click **Add New → Project** and import the repo.
-3. Leave the framework preset as **Other** with no build command, and click **Deploy**.
-
-Every push to `main` redeploys automatically.
+Pushes to `main` on GitHub redeploy automatically on Vercel.

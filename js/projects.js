@@ -8,7 +8,7 @@
   replace them with your own.
 
   Fields:
-    title        Project name (shown big on the card)
+    title        Project name (shown on the cover artwork)
     client       Client or brand name
     category     One of: "Branding", "Campaigns", "Social", "Print"
                  (these become the filter buttons — add new ones freely)
@@ -18,6 +18,7 @@
     challenge    The problem / brief
     approach     What you did and why
     results      Up to 3 headline numbers: { value: "+180%", label: "..." }
+                 (the first one also appears in the Results timing tower)
     deliverables List of things you produced
     link         Optional URL to the live work (or leave as "")
 
