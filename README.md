@@ -9,10 +9,10 @@ four hobbies: **F1, football, photography and walking**. No build step — Verce
 | --- | --- | --- |
 | Hero | F1 | Start lights launch the page; a **reaction-time game** saves your best time; telemetry gauges count up |
 | About | All four | Hobby cards explaining the theme |
-| Work | Photography | Gallery seen **through a camera viewfinder** (autofocus, rule of thirds); filter by category; case studies open with a **shutter flash** and a "shot info" panel; shareable links like `/#work-bloom-co` |
+| Work | Photography | Gallery seen **through a camera viewfinder** (autofocus, rule of thirds); filter by category; case studies open with a **shutter flash** and a "shot info" panel; shareable links like `/#work-ratby-sunday-fc` |
 | Skills | Football | Your **starting XI** on a pitch (turns portrait on phones); tap a player for their **player card**; toolkit as the subs' bench |
 | Journey | Walking | A **trail map** that draws itself as you scroll, waypoints for each role, and a step counter |
-| Results | F1 + football | **Timing tower** of headline results (with a purple fastest lap) and post-match ratings for testimonials |
+| Results | F1 | **Timing tower** of headline results (with a purple fastest lap for the biggest % uplift) |
 | Contact | F1 + football | **Team radio** message that types itself out, copy-email button, and a "transfer status" card |
 
 Also: lap counter in the nav, progress bar, chequered-flag footer, reduced-motion support and a mobile layout.

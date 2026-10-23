@@ -33,7 +33,7 @@
 window.PROJECTS = [
   {
     title: "Fusion 360 Group",
-    code: "F36",
+    code: "FUS",
     client: "Fusion 360 Group",
     category: "Marketing",
     year: "2025 — Present",
